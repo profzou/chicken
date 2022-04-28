@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> CSCE567 - Final Project </title>
+<style>
+body{
+	margin:auto;
+	width:80%;
+	background-image:url("https://i.pinimg.com/originals/e5/90/3c/e5903c5585b425cbd684d82495163d3e.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 10%;
+}
+
+	
+
+/* Style the tab */
+.tab {
+  overflow:visible;
+  border: 1px solid #ccc;
+  background-color: white;
+  position:fixed;
+  top:0;
+  z-index: 9999;
+  padding:5px;
+  width:80%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: black;
+  color:white;
+  display:inline;
+  margin:auto;
+  float:none;
+  border: none;
+  outline: none;
+  width:33.1%;
+  cursor: pointer;
+  padding: 14px 20px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  color:black;
+  
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  color:black;
+}
+
+/* Style the tab content */
+.tabcontent {
+  font-family:arial;
+  color:black;
+  margin:auto;
+  width:95%;
+  position:relative;
+  top:80px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+</style>
+
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks active" onclick="openTab(event, 'London')" id="defaultOpen">Efficiency</button>
+  <button class="tablinks" onclick="openTab(event, 'Paris')">Sales</button>
+  <button class="tablinks" onclick="openTab(event, 'Tokyo')">Power</button>
+</div>
+<!------------------------------------------------------------------------------------------------>
+ 
+
+<div id="London" class="tabcontent" style="text-indent: 20px; display: block;">
+	<h1 style="text-align:center;color:white;position:relative;top:10px;left:15px;">Visualizing Automobile industry data in United States </h1>
+	<br><br><br>
+	<h2 style="text-align:center"> Performance of Automotives </h2>
+	<p style="font-s
+MPG for electric and non-electric vehicles is shown in the graph above. Until 2011, the maximum range of non-electric vehicles was practically constant (roughly 40 MPG). The performance has improved since 2012. Manufacturers of electric vehicles, on the other hand, have demonstrated a significant rise in performance from 75 MPG in 2012 to 110 MPG in 2014.ize:20px;">The United States boasts one of the world's largest automobile marketplaces. The automobile industry is the largest manufacturing sector in the United States, according to the American Automotive Policy Council. Annually, around 8-10 million automobiles are produced in the United States. More than 400,000 employment are directly supported by U.S. affiliates of majority foreign-owned automobile businesses. Furthermore, many automakers have engine and transmission plants in the United States and undertake R&D, design, and testing there. New R&D activities are helping the industry adapt to the opportunities of the twenty-first century. </p>
+
+	<p style="font-size:20px;">Electric vehicles currently account for a small portion of the entire automotive market, but their popularity is growing as automakers improve their range, performance, and appearance. Here are a few examples of why electric vehicles are not only environmentally friendly, but also perform better than non-electric vehicles.</p>
+
+	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="source/P11.html" height="525" width="100%"></iframe>
+	
+	<p style="font-size:20px;"> 
+MPG for electric and non-electric vehicles is shown in the graph above. Until 2011, the maximum range of non-electric vehicles was practically constant (roughly 40 MPG). The performance has improved since 2012. Manufacturers of electric vehicles, on the other hand, have demonstrated a significant rise in performance from 75 MPG in 2012 to 110 MPG in 2014. </p>
+	
+	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="source/P12.html" height="525" width="100%"></iframe>
+	
+	<p style="font-size:20px;"> The density distribution of highway MPG of vehicles over different fuel types is depicted in the graph above. Electric vehicles have clearly outscored all other petroleum and natural gas-powered vehicles. Diesel vehicles, on the other hand, have a higher average MPG than regular, gasoline, premium, flex fuel, and natural gas vehicles.</p>
+
+</div>
+<!------------------------------------------------------------------------------------------------>
+<div id="Paris" class="tabcontent" style="text-indent: 20px; display: none;">
+	<h1 style="text-align:center;color:black;position:relative;top:10px;left:15px;">Electric Vehicle sales in US </h1>
+	<br><br>
+	<p style="font-size:20px;">
+In 2019, around 245,000 battery electric vehicles (EVs) were sold in the United States, with Tesla models accounting for nearly 80% of that total. Only 7% of battery electric vehicle sales in the United States were sold by second-placed Chevrolet. Nissan has been a consistent seller of electric vehicles. Over the last five years, BMW's popularity in electric vehicles has dwindled. The Alternative Fuels Data Center of the US Department of Energy provided this information.</p>
+
+	<p style="font-size:20px;">Click on the play button to see how the sales of EV changed over years. </p>
+	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="source/EV_sales.html" height="525" width="100%"></iframe>
+	
+
+</div>
+<!------------------------------------------------------------------------------------------------>
+<div id="Tokyo" class="tabcontent" style="text-indent: 20px; display: none;">
+	<h1 style="text-align:center;color:black;position:relative;top:30px;">Charging stations across US</h1>
+	<br><br><br>
+	<p style="font-size:20px;">An electric vehicle charging network is a charging station infrastructure system for electric automobiles. Many government agencies, automobile manufacturers, and charging infrastructure suppliers attempted to establish networks. Estonia remained the only country to have built a nationwide public electric charging network as of December 2016. The Tesla Supercharger network's greatest fast-charging facility, with 56 charging slots, was in California as of November 2020.</p>
+
+	<p style="font-size:20px;">The graph below depicts the distribution of charging stations across different states in the United States. By 2020, the majority of EV charging stations will be placed in the country's east and west. In the center United States, however, there is a lot of room for more charging stations. Hover your mouse over the bubbles to discover how many charging stations each city has.</p>
+	<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="source/P3.html" height="800" width="100%"></iframe>
+
+
+
+</div>
+<!------------------------------------------------------------------------------------------------>
+<script>
+
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById('defaultOpen').click();
+</script>
+
+
+
+</body>
+</html>
